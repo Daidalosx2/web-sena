@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>RTAM</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link rel="stylesheet" href='{% static 'css/login.css' %}'>
+
+
+</head>
+
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Crear cuenta</label>
+					<input type="text" name="txt" placeholder="nombre" required="">
+					<input type="email" name="email" placeholder="correo electronico" required="">
+					<input type="password" name="pswd" placeholder="contraseña" required="">
+					<button>Crear cuenta</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Ingresar</label>
+					<input type="email" name="email" placeholder="correo electronico" required="">
+					<input type="password" name="pswd" placeholder="contraseña" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
